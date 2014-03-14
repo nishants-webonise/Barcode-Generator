@@ -3,7 +3,7 @@
 <p>
   <strong>Barcode:</strong>
   <%= @product.barcode %>
-  <%= image_tag ("/Barcodes/" + barcode_image_uri(@product.barcode, "Code128A")) %>
+  <%= image_tag ("/Barcodes/" + barcode_image_uri(@product.barcode, @product.barcode_type)) %>
 </p>
 
 

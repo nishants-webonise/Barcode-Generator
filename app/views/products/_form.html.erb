@@ -12,7 +12,11 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :barcode %><br />
+    <%= f.label :barcode_type %>
+    <%= f.select :barcode_type, ['Code128A', 'Code128B', 'Code128C'] %>
+  </div>
+  <div class="field">
+    <%= f.label :barcode %>
     <%= f.text_field :barcode %>
   </div>
   <div class="actions">
